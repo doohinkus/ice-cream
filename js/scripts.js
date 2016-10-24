@@ -1,14 +1,10 @@
 $(document).ready(function (){
- var tags = ["p", "h1", "img"];
- var names = ["paragraph", "heading", "image"];
+  var icecreams = ["chocolate chip cookie dough", "sea salt caramel", "pecan praline", "strawberry"];
+  $(".container").append("<ul id='flavors'></ul>");
 
- tags.forEach(function (tag){
-   jQuery(tag).click(function() {
+  icecreams.forEach(function(flavors){
+    $("#flavors").append("<li>" + flavors + "</li>");
+  })
 
-    alert("This is a " + tag);
-
-
-  });
- });
 
 });
